@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: new-user
+        function:
+          bindings:
+            newUser-out-0: output
